@@ -6,7 +6,6 @@
 }
 
 body{
-    background-image: url("3.jpg");
     min-height:100vh; 
     background-attachment: fixed;
     background-repeat: no-repeat; 
@@ -174,6 +173,7 @@ a:hover{
      margin-top:15px;
      margin-left:40%;
      margin-right:40%;
+     font-size:8px;
  }
  
  #donate{
