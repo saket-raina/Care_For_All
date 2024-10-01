@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>Every Little Contribution Matters</h1>
+        </header>
+
+        <section class="donation-section">
+            <h4>Your contribution can help us make a difference. Please fill out the form below to donate.</h4><br><br>
+            <form class="donation-form" action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="amount">Donation Amount:</label>
+                <input type="number" id="amount" name="amount" min="1" required>
+
+                <label for="message">Message (optional):</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit" class="submit-btn">Donate</button>
+            </form>
+        </section>
+
+        <footer class="main-footer">
+            <p>&copy; 2024 CARE FOR ALL <br> All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

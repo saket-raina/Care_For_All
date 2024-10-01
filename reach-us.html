@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write To Us</title>
+    <style>
+        
+        @import url("https://fonts.googleapis.com/css2? family-Poppins:wght@300;400;500;600;700; 800;900&display=swap");
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EDE8F5;
+            color: #00072D;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        h1 {
+            color: #00072D;
+            text-align: center;
+             font-family: "Poppins",serif;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            color: #00072D;
+        }
+
+        a {
+            color: #8697C4;
+            text-decoration: none;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #8697C4;
+            border-radius: 4px;
+            background-color: #EDE8F5;
+            color: #00072D;
+        }
+
+        input[type="submit"] {
+            background-color: #8697C4;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00072D;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Write To Us</h1>
+        <p>If you have any queries, just send us a message and someone from our team will reach out to you.</p>
+
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location">
+
+            <label for="organization">Organization Name:</label>
+            <input type="text" id="organization" name="organization">
+
+            <label for="partnership">Partnership Type:</label>
+            <select id="partnership" name="partnership" required>
+                <option value="Select">Select</option>
+                <option>Receipt related queries</option>
+                <option>Making A Donation(Indian Donor)</option>
+                <option>Making A Donation(NRI Donor)</option>
+                <option value="corporate">Corporate & CSR Partnership</option>
+                <option>Volunteering & Internships</option>
+                <option>Media Queries</option>
+                <option>Legacy Giving</option>
+                <option>Other</option>
+            </select>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+</body>
+</html>

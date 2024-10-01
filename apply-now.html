@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now</title>
+    <link rel="stylesheet" href="stylish.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Apply Now</h1>
+        <form action="/submit-application" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="program">Program Applying For:</label>
+            <select id="program" name="program" required>
+                <option value="child-rights-leader">Child Rights Leader</option>
+                <option value="community-volunteer">Community Volunteering</option>
+                <option value="internship">Internship</option>
+                <option value="remote-volunteer">Remote Volunteering</option>
+                <option value="student-volunteer">Student Volunteering</option>
+            </select>
+
+            <button type="submit" class="apply-button">Submit</button>
+        </form>
+    </div>
+     <footer class="main-footer">
+            <p>&copy; 2024 CARE FOR ALL <br> All rights reserved.</p></footer>
+</body>
+</html>
